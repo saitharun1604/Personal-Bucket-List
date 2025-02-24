@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("alone.jpg.jpg");
+    background-position: fixed;
+    
+    background-size:cover; 
+    color: #333;
+  }
+  
+  header {
+    
+    color: rgb(255, 255, 255);
+    text-align: left;
+    padding: 1rem 4rem;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+  }
+  
+  header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+  }
+  
+  main {
+    padding: 2rem;
+  }
+  
+  /* Bucket List Styles */
+  .bucket-list {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .bucket-list li {
+    background: white;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .bucket-list li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .bucket-list li i {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .bucket-list li.completed {
+    color: #888;
+   
+  }
+  
+  .bucket-list li.completed i {
+    color: #1bb920;
+  }
+  
+  /* Footer Styles */
+  footer {
+    background:#151515;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  
+    header p {
+      font-size: 1rem;
+    }
+  
+    .bucket-list li {
+      padding: 0.8rem;
+    }
+  
+    .bucket-list li i {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header h1 {
+      font-size: 1.8rem;
+    }
+  
+    header p {
+      font-size: 0.9rem;
+    }
+  
+    .bucket-list li {
+      padding: 0.6rem;
+    }
+  }
